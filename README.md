@@ -1,6 +1,6 @@
 # isFraud-Competition
 
-The goal of the project is to select and create the best prediction algorithm to predict whether a certain transaction is fraudulent or not. This is the first projecto of Machine Learning Models course.
+The goal of the project is to select and create the best prediction algorithm to predict whether a certain transaction is fraudulent or not. This is the first project of Machine Learning Models course.
 
 #### Structure of the notebook:
 * `Libraries`: Includes a briefly description of where they were used in the process
