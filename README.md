@@ -26,24 +26,24 @@ The goal of the project is to select and create the best prediction algorithm to
 * `acqCountry`: country code where the transaction occured
 * `merchantCountryCode`: contry code where de business is located
 * `posEntryMode`: POS lecture mode, it could be: 
-** 02 - PAN auto-entry via magnetic stripe, track data is not required, 2 - no PIN.
-05 - PAN auto-entry via chip, 2 - no PIN.
-09 - E-Commerce, 0 - unknown PIN capability.
-80 - Fallback to magnetic stripe, 0 - unknown PIN capability.
-90 - PAN auto-entry via magnetic stripe, track data should be transmitted within the authorization request.
-posConditionCode:
-01 - Cardholder not present
-08 - Mail/telephone order (includes Visa phone and reoccurring transactions)
-99 - Other
-merchantCategoryCode: categoría del comercio donde se hace el consumo
-currentExpDate: fecha de expiración de la tarjeta
-accountOpenDate: fecha en la que se abrió la cuenta en el banco
-dateOfLastAddressChange: fecha del último cambio de dirección
-cardCVV: código real detrás de la tarjeta
-enteredCVV: código ingresado detrás de la tarjeta
-cardLast4Digits: últimos 4 dígitos de la tarjeta
-transactionType: tipo de transacción
-currentBalance: refleja todos los cargos y la actividad de pago en la cuenta de tarjeta de crédito hasta la fecha en que se generó el estado de cuenta
-cardPresent: la tarjeta de crédito estuvo presente o no en la transacción
-expirationDateKeyInMatch: la fecha de expiración de la tarjeta es anterior a la transacción
-isFraud: la transacción es fraude o no (variable a clasificar)
+  * 02 - PAN auto-entry via magnetic stripe, track data is not required, 2 - no PIN.
+  * 05 - PAN auto-entry via chip, 2 - no PIN.
+  * 09 - E-Commerce, 0 - unknown PIN capability.
+  * 80 - Fallback to magnetic stripe, 0 - unknown PIN capability.
+  * 90 - PAN auto-entry via magnetic stripe, track data should be transmitted within the authorization request.
+* `posConditionCode`: aditional conditions when the transaction occured, it could be:
+  * 01 - Cardholder not present
+  * 08 - Mail/telephone order (includes Visa phone and reoccurring transactions)
+  * 99 - Other
+* `merchantCategoryCode`: the type of business where the transaction occured
+* `currentExpDate`: expiration date of the card
+* `accountOpenDate`: date in which the bank account was opened
+* `dateOfLastAddressChange`: date in which the physical address was changed
+* `cardCVV`: real CVV code
+* `enteredCVV`: CVV code received during the transaction
+* `cardLast4Digits`: last 4 digits of the card
+* `transactionType`: type of transaction
+* `currentBalance`: amount of money available in the card when the transaction occured
+* `cardPresent`: if the card was there during the transaction
+* `expirationDateKeyInMatch`: if expiration date card is older than transaction date
+* `isFraud`: transaction was fraud or not (variable to classify)
