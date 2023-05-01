@@ -7,6 +7,7 @@ The goal of the project is to select and create the best prediction algorithm to
 * `Data Export`: Includes the data export, separation in train-test and exploration
 * `Cleaning Pipelines`: Building of the three pipelines that I used
 * `Model`: Building of the pipeline where I'm placing my model
+* `Saving Model Pipeline`: Saving the pipeline where I built my model
 
 #### Description of the repo:
 * `FraudModel.pkl`: The file which contains the model created
